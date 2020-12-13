@@ -30,4 +30,10 @@ class Usuario
     end
 end
 
+cuenta1=CuentaBancaria.new('bci', '1-0', 5000)
+cuenta2=CuentaBancaria.new('bbva', '2-0', 5000)
 
+cuenta1.transferir(5000, cuenta2)
+
+puts cuenta1.saldo
+puts cuenta2.saldo
