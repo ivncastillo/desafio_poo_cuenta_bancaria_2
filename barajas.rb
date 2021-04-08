@@ -1,6 +1,6 @@
-require_relative carta
+require_relative '.\carta.rb'
 
-class baraja
+class Baraja
     attr_accessor :cartas
 
     def initialize()
@@ -25,3 +25,8 @@ class baraja
     end
 
 end
+
+baraja_prueba=Baraja.new()
+baraja_prueba.barajar
+puts baraja_prueba.sacar
+puts baraja_prueba.repartir_mano

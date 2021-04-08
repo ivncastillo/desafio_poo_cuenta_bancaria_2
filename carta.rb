@@ -3,6 +3,6 @@ class Carta
 
     def initialize(numero, color)
         @numero = numero
-        @pinta=color
+        @pinta = color
     end
 end
